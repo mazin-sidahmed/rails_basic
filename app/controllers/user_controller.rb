@@ -4,7 +4,7 @@ class UserController < ApplicationController
   end
 
   def create
-    
+    user = User.create(name: "mazin", Name: "faris")
 
   end
 end
