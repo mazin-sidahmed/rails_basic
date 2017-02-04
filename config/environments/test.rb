@@ -3,6 +3,11 @@ Rails.application.configure do
 
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
+  Rails.application.routes.default_url_options = {
+  host: 'localhost',
+  port: 3000
+}
+
   # your test database is "scratch space" for the test suite and is wiped
   # and recreated between test runs. Don't rely on the data there!
   config.cache_classes = true
